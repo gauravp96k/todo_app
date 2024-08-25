@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #495057;
+    background-image: url("toda.jpg");
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 2rem;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section button {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.filter-section button:hover {
+    background: #0056b3;
+}
+
+.filter-section button.active {
+    background: #0056b3;
+    font-weight: bold;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li.completed {
+    background: #e9ecef;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+li button {
+    margin-left: 5px;
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+}
+
+.check-btn {
+    background: #28a745;
+    color: white;
+}
+
+.check-btn:hover {
+    background: #218838;
+}
